@@ -8,9 +8,9 @@ from airflow.models.dag import DAG
 from airflow.operators.python import PythonOperator
 
 # import python callable function
-from dags.t1_extract import extract
-from dags.t2_transform import transform
-from dags.t3_load import load
+from config.t1_extract import extract
+from config.t2_transform import transform
+from config.t3_load import load
 
 # instantiate the DAG
 with DAG (
@@ -51,4 +51,4 @@ with DAG (
    )
 
    # set the dependencies sequence
-   t1 >> t2
+   t1 >> t2 >> t3

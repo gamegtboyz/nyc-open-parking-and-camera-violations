@@ -6,7 +6,4 @@ db_config = {
     'database': 'airflow'
 }
 
-connection_string = f"postgresql+psycopg2://\
-                    {db_config['user']}:{db_config['ppassword']}@\
-                    {db_config['host']}:{db_config['port']}/\
-                    {db_config['database']}"
+connection_string = f"postgresql+psycopg2://{db_config['user']}:{db_config['password']}@{db_config['host']}:{db_config['port']}/{db_config['database']}"
