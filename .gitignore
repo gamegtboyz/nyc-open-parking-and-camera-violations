@@ -1,5 +1,5 @@
 *.ipynb
 *.log
-src_open_parking_and_camera_violations.csv
+data/data.csv
 readme.md
 *.drawio*

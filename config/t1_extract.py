@@ -50,5 +50,5 @@ def extract():
     data = pd.DataFrame(all_data)
 
     # exported the cleaned data onto new .csv files
-    data.to_csv('data.csv',index = False)
+    data.to_csv('data/data.csv',index = False)
     print(f"{i} page(s) of dataset were downloaded successfully.")

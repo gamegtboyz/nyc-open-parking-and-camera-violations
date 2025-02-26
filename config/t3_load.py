@@ -7,7 +7,7 @@ def load():
     from config.db_config import connection_string
 
     # download the file from transformed data
-    data = pd.read_csv('data.csv')
+    data = pd.read_csv('data/data.csv')
 
     # create database connection using connection string
     engine = create_engine(connection_string)
