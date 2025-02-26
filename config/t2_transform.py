@@ -4,7 +4,7 @@ def transform():
     import ast
 
 
-    data = pd.read_csv('src_open_parking_and_camera_violations.csv')
+    data = pd.read_csv('data.csv')
 
     ### DATA TRANSFORMATION ###
     '''
@@ -49,5 +49,5 @@ def transform():
     data.drop(['issue_date','summons_image'], axis=1, inplace=True)
 
     # overwrite the extracted data with transformed data for loading into database
-    data.to_csv('src_open_parking_and_camera_violations.csv',index = False)
+    data.to_csv('data.csv',index = False)
     print(f"Data was transformed into sources file succesfully.")
