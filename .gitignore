@@ -1,5 +1,4 @@
 *.ipynb
 *.log
 data/data.csv
-readme.md
 *.drawio*
