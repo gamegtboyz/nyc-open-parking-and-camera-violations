@@ -2,10 +2,12 @@ def extract():
     import requests
     import pandas as pd
 
+    from config.token import token
+
     ### DATA EXTRACTION ###
     # setup endpoints and API key
     endpoints = "https://data.cityofnewyork.us/resource/nc67-uf89.json"
-    token = "qMLbbltM4PxnOZ6W4yZgE3QIO"
+    token = token
 
     # define parameters
     params = {
